@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank you !!</title>
+</head>
+<body>
+<h3> Thank you for registering yourself !!</h3>
+<div class = "col-lg-5 shadow p-0  mx-auto ">
+
+  <div class = "p-4">
+    <form method="post" action="/Login/">
+      {% csrf_token %}
+      {{form.as_p}}
+      <hr>
+  <input class = "btn btn-success" type="submit" value="Login">
+</form>
+  </div>
+</div>
+</body>
+</html>
